@@ -1,0 +1,34 @@
+1🔹 Data Warehousing & Analytics (For querying & analyzing big data)
+
+Amazon Redshift – Data warehouse for large-scale analytics (like SQL for Big Data).
+Amazon Redshift Serverless – Same as Redshift, but auto-scales without managing clusters.
+Amazon EMR (Elastic MapReduce) – Big data processing using Hadoop, Spark, and Presto.
+Amazon Athena – Serverless SQL query service for analyzing data in S3 (pay per query).
+## Mnemonic: "Redshift Scales, EMR Analyzes" → RSEA
+(Redshift, Serverless Redshift, EMR, Athena – all for analytics)
+
+2🔹NoSQL & Graph Databases (For flexible & relationship-based data)
+Amazon DocumentDB – MongoDB-compatible document database (for JSON-like data).
+Amazon Neptune – Graph database (for social networks, fraud detection, etc.).
+Amazon Timestream – Time-series database (for IoT, event tracking, and logs).
+Amazon QLDB (Quantum Ledger Database) – Immutable ledger (for financial transactions & tracking).
+## Mnemonic: "Documents Need Time Quantity" → DNTQ
+(DocumentDB, Neptune, Timestream, QLDB – all store structured or semi-structured data).
+
+3🔹Data Movement & Blockchain
+AWS Glue – ETL service (Extract, Transform, Load – prepares data for analytics).
+Amazon Managed Blockchain – For creating & managing blockchain networks (Hyperledger Fabric, Ethereum).
+## Mnemonic: "Glue Blocks" → GB
+(Glue & Blockchain – they "glue" and "block" data together).
+
+Quick Summary:
+Type	Service	Mnemonic	Usage
+Analytics	Redshift, Redshift Serverless, EMR, Athena	RSEA	Big Data, SQL queries, analytics
+NoSQL & Graph	DocumentDB, Neptune, Timestream, QLDB	DNTQ	Document storage, graph relationships, time-series, ledger
+Data Movement	Glue, Blockchain	GB	ETL processing, blockchain transactions
+
+
+Final Trick:
+Remember RSEA → for analytics.
+Remember DNTQ → for flexible databases.
+Remember GB → for moving and securing data.S
