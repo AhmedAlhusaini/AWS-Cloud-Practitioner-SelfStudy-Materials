@@ -1,0 +1,34 @@
+Cloud Shell Basic Commands 
+=======================
+aws sts get-caller-identity
+aws iam get-user-policy --user-name YOUR_USERNAME --policy-name YOUR_POLICY_NAME
+aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,InstanceType,State.Name,PublicIpAddress]' --output table
+
+
+AWS CLI
+==================================
+aws iam list-users
+aws iam list-account-aliases
+https://<account-alias>.signin.aws.amazon.com/console
+https://<account-id>.signin.aws.amazon.com/console
+
+---
+aws configure
+aws --version
+aws ec2 describe-instances
+---
+Get AWS Account ID Using CLI
+aws sts get-caller-identity --query "Account" --output text
+
+----
+Create Instance EC2
+
+aws ec2 create-security-group --group-name "launch-wizard-1" --description "launch-wizard-1 created 2025-01-18T10:34:23.423Z" --vpc-id "vpc-0810d7ffc206fb4e1" 
+aws ec2 authorize-security-group-ingress --group-id "sg-preview-1" --ip-permissions '{"IpProtocol":"tcp","FromPort":22,"ToPort":22,"IpRanges":[{"CidrIp":"0.0.0.0/0"}]}' 
+aws ec2 run-instances --image-id "ami-053a862cc72bed182" --instance-type "t3.micro" --network-interfaces '{"AssociatePublicIpAddress":true,"DeviceIndex":0,"Groups":["sg-preview-1"]}' --credit-specification '{"CpuCredits":"unlimited"}' --tag-specifications '{"ResourceType":"instance","Tags":[{"Key":"Name","Value":"MyFirstInstance"},{"Key":"Goal","Value":"Learning AWS"}]}' --metadata-options '{"HttpEndpoint":"enabled","HttpPutResponseHopLimit":2,"HttpTokens":"required"}' --private-dns-name-options '{"HostnameType":"ip-name","EnableResourceNameDnsARecord":true,"EnableResourceNameDnsAAAARecord":false}' --count "1" 
+
+aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,InstanceType]" --output table
+ssh -i "HelloSSHEC2T3Mirco.pem" ec2-user@ec2-16-171-44-62.eu-north-1.compute.amazonaws.com
+ssh -i "HelloSSHEC2T3Mirco.pem" ec2-user@16.171.44.62 
+chmod 0400 HelloSSHEC2T3Mirco.pem
+ssh -i "HelloSSHEC2T3Mirco.pem" ec2-user@16.171.44.62 
