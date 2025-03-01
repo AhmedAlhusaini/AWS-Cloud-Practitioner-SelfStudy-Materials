@@ -1,0 +1,32 @@
+Network Performance vs. EBS Bandwidth
+************************************************
+
+Network Performance refers to the overall network capabilities of an instance, 
+including the speed and quality of the network connection. 
+It's typically measured in Gbps (Gigabits per second) and can include terms like "Low to Moderate," "Moderate," "Up to 10 Gbps," "20 Gbps," etc. 
+
+For example, "Low to Moderate" means the network performance is on the lower end, suitable for less demanding network tasks, while "Up to 10 Gbps" means the instance can handle network speeds up to 10 Gigabits per second, suitable for high-performance networking tasks1.
+
+EBS Bandwidth refers to the bandwidth available for Elastic Block Store (EBS) volumes attached to the instance. This is measured in Mbps (Megabits per second) and indicates the speed at which data can be read from or written to EBS volumes. 
+
+For example, an EBS Bandwidth of 4,750 Mbps means the instance can handle data transfer speeds up to 4,750 Megabits per second for EBS volumes1.
+
+Scenarios
+When Network Performance is mentioned but not EBS Bandwidth:
+
+This typically means the focus is on the overall network capabilities of the instance, such as data transfer over the internet or between instances within the same network. 
+
+For example, a web server handling high traffic would benefit from high network performance.
+
+When EBS Bandwidth is mentioned but not Network Performance:
+
+This typically means the focus is on the speed of data transfer between the instance and its attached EBS volumes. 
+
+For example, a database server that requires fast read/write operations to storage would benefit from high EBS bandwidth1.
+
+Meaning of Terms
+
+Low to Moderate: Indicates that the network performance is on the lower end, suitable for less demanding network tasks.
+Moderate: Indicates a mid-range network performance, suitable for moderate network tasks.
+Up to 10 Gbps: Indicates that the instance can handle network speeds up to 10 Gigabits per second, suitable for high-performance networking tasks.
+20 Gbps: Indicates that the instance can handle network speeds up to 20 Gigabits per second, suitable for very high-performance networking tasks.
