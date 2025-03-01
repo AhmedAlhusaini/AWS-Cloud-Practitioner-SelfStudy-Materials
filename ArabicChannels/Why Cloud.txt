@@ -1,0 +1,26 @@
+Goverance , needs & Challenges
+facilities  
+Sizing in peak 
+All Payement upfront ==> capex
+time to wait untile purchase cylce 
+building data centers / racking & Stacking ( Passive & Active )
+Networking Archtecture ( Tagging & labeling & Configuring )
+Virtualization 
+Compliance 
+Security
+Much more more  
+=====
+Application 
+productivity 
+Bussiness Agility 
+
+-------------------In CLoud 
+No Faicilities 
+Rent 
+Sizing in AVG Not Peak ( Elasticisty , Scaalaibity , ..)
+H/W as go , use , ... variable expenses not cp
+No  Time 
+
+what ever application and infrasturcture size , yes it is a metter of minutes due to IaC , SSDAC , FaaS , ........
+productivity 
+Bussiness Agility 
