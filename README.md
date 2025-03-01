@@ -145,6 +145,8 @@ AWS Cloud Quest: Cloud Practitioner:
 ## ☕ Support My Work
 
 If you found this helpful, consider Supporting ☕ My Mission – Empowering Careers, GIS Innovation , GIS DevOps & Cloud Learning 🚀
+
+
 ![Buy Me A Coffe](./Assets/buyme.gif)
 
 - [☕ Buy Me a Coffee](https://buymeacoffee.com/ahmedalhusainy)
