@@ -1,0 +1,20 @@
+In the context of storage, especially in AWS, throughput refers to the amount of data that can be transferred to or from a storage system within a given time period. It's typically measured in megabytes per second (MB/s) or gigabytes per second (GB/s).
+
+Types of Throughput in AWS Storage
+Elastic Throughput: Automatically scales up or down based on the workload activity. Ideal for unpredictable workloads1.
+
+Provisioned Throughput: You specify a fixed level of throughput that the storage system can handle, regardless of the workload. Suitable for predictable workloads1.
+
+Bursting Throughput: Allows temporary increases in throughput based on the amount of storage provisioned. Useful for workloads with occasional spikes in demand1.
+
+Example Scenarios
+Elastic Throughput: A web application with varying traffic patterns. During peak hours, the throughput increases to handle the load, and during off-peak hours, it decreases to save costs1.
+
+Provisioned Throughput: A database that requires consistent read/write operations. The throughput is set to a fixed level to ensure performance stability1.
+
+Bursting Throughput: A media streaming service that experiences high traffic during new releases or events. The throughput can burst to accommodate the sudden increase in demand1.
+
+Low to Moderate, Up to 10 Gbps, etc.
+Low to Moderate: Suitable for applications with minimal network requirements.
+
+Up to 10 Gbps: Indicates the instance can handle network speeds up to 10 Gigabits per second, suitable for high-performance networking tasks.
