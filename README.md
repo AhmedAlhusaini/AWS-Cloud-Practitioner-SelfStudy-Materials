@@ -1,7 +1,10 @@
 # 🌥️ CCP Cloud Practitioner Self-Study Guide and Materials
-
-Welcome to the **CCP Cloud Practitioner AWS Academy Self-Study Guide and Materials (Version 2.0.13)**! 🚀
-This comprehensive guide is designed to help you ace your cloud certification journey. Whether you're a beginner or looking to refresh your knowledge, this guide has got you covered. ✅
+    
+<p>
+      Hello! I'm <strong>Ahmed Tarek Alhusainy</strong>, Welcome to the **CCP Cloud Practitioner AWS Academy Self-Study Guide and Materials (Version 2.0.13)**! 🚀
+This comprehensive guide is designed to help you ace your cloud certification journey. Whether you're a beginner or looking to refresh your knowledge, this guide has got you covered. ✅  
+      👉 <a href="https://ahmedalhusaini.github.io/AWS-Cloud-Practitioner-SelfStudy-Materials/" target="_blank">Open the Repo Navigator Website For Non GitHub Familiar</a>
+</p>
 
 ---
 
