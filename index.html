@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS CCP Practice Hub Live Demo (Khaled Elhannat)</title>
+    <meta
+      name="description"
+      content="Live demo of the amazing AWS Certified Cloud Practitioner Practice Hub created by Khaled Elhannat."
+    />
+    <link rel="icon" type="image/png" href="https://content.cloudthat.com/resources/wp-content/uploads/2023/12/dgt.png" />
+    <style>
+      /* BASE STYLES AND VARIABLES (Copied from SAA Index) */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --aws-orange: #ff9900;
+        --aws-dark-blue: #232f3e;
+        --aws-light-blue: #4b9cd3;
+        --aws-squid-ink: #161e2d;
+        --text-primary: #ffffff;
+        --text-secondary: #b0bec5;
+        --card-bg: #2a3441;
+        --card-hover: #3a4451;
+        --gradient-primary: linear-gradient(135deg, #232f3e 0%, #161e2d 100%);
+        --gradient-accent: linear-gradient(135deg, #ff9900 0%, #ffb84d 100%);
+        --shadow-glow: 0 0 30px rgba(255, 153, 0, 0.1);
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--gradient-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        overflow-x: hidden;
+        min-height: 100vh; 
+      }
+
+      /* Animated background (Simplified for this page) */
+      .background-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.05;
+        background: linear-gradient(135deg, #232f3e 10%, #161e2d 90%);
+      }
+
+      /* Header */
+      header {
+        padding: 1.5rem 2rem;
+        background: rgba(35, 47, 62, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 153, 0, 0.2);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        font-weight: 700;
+        color: var(--aws-orange);
+        margin-bottom: 0.5rem;
+      }
+      
+      .subtitle {
+          color: var(--text-secondary);
+          margin-bottom: 1.5rem;
+          max-width: 800px;
+          margin: 0.5rem auto 1.5rem;
+          font-size: 1rem;
+      }
+      
+      .attribution-link {
+          color: var(--aws-light-blue);
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s;
+      }
+      .attribution-link:hover {
+          color: var(--aws-orange);
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: var(--gradient-accent);
+        color: var(--aws-dark-blue);
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(255, 153, 0, 0.3);
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 15px rgba(255, 153, 0, 0.4);
+      }
+
+      /* Main Content & Iframe */
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        /* We rely on the large height of the iframe below to create scrollable space */
+        height: auto; 
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .demo-container {
+        flex-grow: 1;
+        width: 100%;
+        background: transparent; 
+        border: none;
+        box-shadow: none;
+        overflow: hidden;
+        margin-top: 0; 
+        border-radius: 0;
+      }
+      
+      /* KEY CHANGE: Set a large, fixed height for the iframe content to force parent scrolling */
+      iframe {
+        width: 100%;
+        /* A large, arbitrary height to contain the CCP hub content. This should eliminate the inner scrollbar. */
+        height: 2800px; 
+        border: none;
+        display: block;
+      }
+
+      /* Footer (Minimal) */
+      footer {
+          padding: 1rem 0;
+          text-align: center;
+          color: var(--text-secondary);
+          font-size: 0.9rem;
+      }
+      
+      @media (max-width: 600px) {
+          .content-wrapper {
+              padding: 0;
+          }
+          h1 {
+              font-size: 1.8rem;
+          }
+          .subtitle {
+              font-size: 0.9rem;
+          }
+          /* Ensure iframe is tall enough on mobile too */
+          iframe {
+              height: 3500px;
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background-animation"></div>
+
+    <header>
+      <p class="subtitle">
+        This is a live demo of the amazing **FREE** practice exams resource created by
+        <a href="https://khaledelhannat.github.io" target="_blank" rel="noopener noreferrer" class="attribution-link">Khaled Elhannat</a>.
+        Feel free to interact with the original hub below!
+      </p>
+      
+      <a
+        href="https://github.com/khaledelhannat/aws-certification-practice-hub"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cta-button"
+      >
+        View Full GitHub Repository
+      </a>
+    </header>
+
+    <div class="content-wrapper">
+      <div class="demo-container">
+        <!-- Live Demo in an iframe -->
+        <iframe
+          src="https://khaledelhannat.github.io/aws-certification-practice-hub/"
+          title="Khaled Elhannat's AWS CCP Practice Hub Live Demo"
+          scrolling="no" 
+        ></iframe>
+      </div>
+    </div>
+    
+    <footer>
+        <p>Disclaimer: Content above is provided by a third-party repository and is not hosted on this page.</p>
+    </footer>
+
+  </body>
+</html>
